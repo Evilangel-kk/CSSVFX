@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="欢迎来到粉黛在线">
+		<meta name="keywords" content="手把手教化妆">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" href="img/jkl.png" />
+		<link rel="stylesheet" href="css/fontawesome.css" />
+		<title>粉黛在线 | 注 册</title>
+	</head>
+	<body>
+		<script src="https://kit.fontawesome.com/9005b554ce.js" crossorigin="anonymous"></script>
+		
+		<div class="bg2">
+			<div class="container">
+				<div class="header">
+					<div class="logo">
+						<img src="img/jkl.png" alt="logo">
+						<h1><a href="home.html">粉黛</a></h1>
+					</div>
+			
+				</div>
+				<div class="wrapper">
+					<div class="button">
+						<div class="icon">
+							<i class="fa-solid fa-house-chimney fa-2x"></i>
+						</div>
+						<span><a href="find.html">Find</a></span>
+					</div>
+					<div class="button">
+						<div class="icon">
+							<i class="fa-solid fa-camera-retro fa-2x"></i>
+						</div>
+						<span><a href="graze.html">Graze</a></span>
+					</div>
+					<div class="button">
+						<div class="icon">
+							<i class="fa-solid fa-user"></i>
+						</div>
+						<span><a href="login.html">Mine</a></span>
+					</div>
+					<div class="button">
+						<div class="icon">
+							<i class="fa-solid fa-caret-down fa-2x"></i>
+						</div>
+						<span><a href="more.html">More</a></span>
+					</div>
+				</div>
+			</div>
+			<fieldset class="form">
+				<legend class="leg1">注册</legend>
+					<form action="" method="POST">
+						<!--<h1>信息登记</h1>-->
+						<fieldset class="txtb">
+							<legend class="leg leg2">昵称/Nickname</legend>
+							<input type="text" placeholder="请输入用户名" id="username">
+						</fieldset>
+						<fieldset class="txtb">
+							<legend class="leg leg2">密码/Password</legend>
+							<input type="password" placeholder="请输入密码" id="pwd">
+						</fieldset>
+						<fieldset class="txtb">
+							<legend class="leg leg3">邮箱/Email</legend>
+							<input type="email" placeholder="请输入邮箱" id="email">
+						</fieldset>
+						<fieldset class="txtb">
+							<legend class="leg leg4">手机/Phone-Number</legend>
+							<input type="text" placeholder="请输入手机号码" id="phonenumber">
+						</fieldset>
+						<input type="submit" value="确认" / id="sub" class="btn1">
+						<input type="reset" value="重置" / id="sub" class="btn2">
+					</form>
+			</fieldset>
+			
+			<div class="clr"></div>
+			<footer id="main-footer">
+				<p>粉黛 &copy;2022,All Rights Reserved.</p>
+			</footer>
+			
+		</div>
+
+
+		<script>
+			var oInput = document.getElementById("sub");
+			var oUsername = document.getElementById("username");
+			var oPassword = document.getElementById("pwd");
+			oInput.onclick = function() {
+				alert("注册成功")
+				location.replace("personal.html");
+			}
+		</script>
+	</body>
+</html>

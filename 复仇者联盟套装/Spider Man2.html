@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/Spider Man style2.css">
+		<link rel="stylesheet" href="css/box style.css">
+		<title>CSS实现蜘蛛侠二代标志</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo"></div>
+		</div>
+		<div class="net net1"></div>
+		<div class="net net2"></div>
+		<div class="net net3"></div>
+		<div class="net net4"></div>
+		
+		<script src="https://kit.fontawesome.com/9005b554ce.js" crossorigin="anonymous"></script>
+		<div class="Page">
+			<div id="left" class="arrowhead left">
+				<i class="fa-solid fa-angle-left"></i>
+			</div>
+			<div id="right" class="arrowhead right">
+				<i class="fa-solid fa-angle-right"></i>
+			</div>
+		</div>
+		<script>
+			var Left=document.getElementById("left");
+			var Right=document.getElementById("right");
+			Left.onclick=function(){
+				location.replace("Spider Man1.html");
+			}
+			Right.onclick=function(){
+				location.replace("Panther.html");
+			}
+		</script>
+	</body>
+</html>

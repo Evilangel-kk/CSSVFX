@@ -1,0 +1,32 @@
+.Page{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+}
+.arrowhead{
+	width: 80px;
+	height: 80px;
+	border: 1px solid gray;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 20px 4px rgb(0,0,0);
+}
+.arrowhead:hover{
+	background-color: rgba(203, 203, 203, 0.5);
+}
+i{
+	font-size: 80px;
+	position: relative;
+	left: 16px;
+	top: -1px;
+	color: white;
+}
+.Page .arrowhead.left{
+	position: absolute;
+	margin-left: -1200px;
+}
+.Page .arrowhead.right{
+	position: absolute;
+	margin-right: -1200px;
+}

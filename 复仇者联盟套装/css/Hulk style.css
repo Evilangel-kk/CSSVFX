@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 101vh;
+	background: radial-gradient(#bed3ba,#1c8a16);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo{
+	position: relative;
+	display: flex;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../img/hulk.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid gray;
+	box-shadow: 0 0 20px 4px rgb(0, 85, 0),0 0 4px 2px rgba(255, 255, 255,0.2) inset;
+}
+.move{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 800px;
+	height: 500px;
+	background-image: url("../img/Hulk move2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: move 2s linear infinite;
+}
+@keyframes move {
+	0%{
+		left: -100px;
+		opacity: 0;
+	}
+	30%{
+		left: 400px;
+		opacity: 1;
+	}
+	70%{
+		left: 500px;
+	}
+	90%{
+		left: 700px;
+	}
+	100%{
+		opacity: 0;
+	}
+}

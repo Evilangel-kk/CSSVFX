@@ -1,0 +1,50 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 101vh;
+	background:#876013;
+}
+.container{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border: 2px solid rgb(117, 77, 11);
+	box-shadow: 0 0 1000px 10px rgb(17, 185, 26), 0 0 6px 4px rgb(157, 106, 17) inset;
+	border-radius: 50%;
+	background-image: url(../img/Doctor\ Strange2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+.magic{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/magic1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation: move 5s linear infinite;
+}
+@keyframes move {
+	0%{
+		opacity: 1;
+		transform: rotate(0);
+	}
+	80%{
+		width: 1000px;
+		height: 1000px;
+		opacity: 0;
+		transform: rotate(540deg);
+	}
+	100%{
+		opacity: 0;
+	}
+}

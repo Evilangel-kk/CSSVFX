@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/Thor style.css"/>
+		<title>CSS雷神标志</title>
+		<style>
+			.Page{
+				display: flex;
+				position: absolute;
+				justify-content: center;
+				align-content: center;
+				text-align: center;
+				top: 50%;
+				left: 50%;
+			}
+			.arrowhead{
+				position: absolute;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				width: 80px;
+				height: 80px;
+				border: 1px solid gray;
+				border-radius: 50%;
+				background-color: rgba(0,0,0,0.2);
+				box-shadow: 0 0 20px 4px rgb(0,0,0);
+			}
+			i{
+				font-size: 80px;
+				position: relative;
+				color: white;
+			}
+			.Page .arrowhead.left{
+				position: absolute;
+				/* transform: translateX(-200px);*/
+				margin-left: -1198px;
+				margin-top: 9px;
+			}
+			.Page .arrowhead.right{
+				position: absolute;
+				/* transform: translateX(-200px);*/
+				margin-right: -1198px;
+				margin-top: 9px;
+			}
+			.arrowhead:hover{
+				background-color: rgba(203, 203, 203, 0.5);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+		    <div class="lightning">
+		        <div class="lightning1"><img src="https://www.jiangweishan.com/demo/lightning1.png"></div>   
+		        <div class="lightning2"><img src="https://www.jiangweishan.com/demo/lightning2.png"></div> 
+		    </div>  
+		</div>
+		<div class="container"></div>
+		<div class="logo"></div>
+		<script src="https://kit.fontawesome.com/9005b554ce.js" crossorigin="anonymous"></script>
+		<div class="Page">
+			<div id="left" class="arrowhead left">
+				<i class="fa-solid fa-angle-left"></i>
+			</div>
+			<div id="right" class="arrowhead right">
+				<i class="fa-solid fa-angle-right"></i>
+			</div>
+		</div>
+		<script>
+			var Left=document.getElementById("left");
+			var Right=document.getElementById("right");
+			Left.onclick=function(){
+				location.replace("American Caption.html");
+			}
+			Right.onclick=function(){
+				location.replace("Iron Man1.html");
+			}
+		</script>
+	</body>
+</html>

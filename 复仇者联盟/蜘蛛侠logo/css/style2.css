@@ -1,0 +1,146 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: radial-gradient(#d46d6f,#531215);
+}
+.container{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border: 10px solid rgb(179, 0, 0);
+	box-shadow: 0 0 32px 8px rgb(113, 0, 0), 0 0 4px 0 rgb(154, 0, 0)inset;
+	border-radius: 50%;
+	background-image: url(../img/spider2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+.net{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 350px;
+	opacity: 0;
+	background-image: url(../img/net2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.net1{
+	top: 330px;
+	left: 180px;
+	animation: move1 2s linear infinite;
+	animation-delay:0.3s;
+}
+.net2{
+	top: 40px;
+	left: 230px;
+	animation: move2 2s linear infinite;
+	animation-delay:0.7s;
+}
+.net3{
+	top: 50px;
+	left: 950px;
+	animation: move3 2s linear infinite;
+	animation-delay:1.1s;
+}
+.net4{
+	top: 300px;
+	left: 1100px;
+	animation: move4 2s linear infinite;
+	animation-delay:1.9s;
+}
+@keyframes move1 {
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	20%{
+		opacity: 0.1;
+	}
+	30%{
+		transform: scale(0.8);
+		opacity: 1;
+	}
+	90%{
+		transform: scale(0.8);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+}
+@keyframes move2 {
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	20%{
+		opacity: 0.1;
+	}
+	30%{
+		transform: scale(0.6);
+		opacity: 1;
+	}
+	90%{
+		transform: scale(0.6);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+}
+@keyframes move3 {
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	20%{
+		opacity: 0.1;
+	}
+	30%{
+		transform: scale(0.9);
+		opacity: 1;
+	}
+	90%{
+		transform: scale(0.9);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+}
+@keyframes move4 {
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	20%{
+		opacity: 0.1;
+	}
+	30%{
+		transform: scale(0.7);
+		opacity: 1;
+	}
+	90%{
+		transform: scale(0.7);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+}

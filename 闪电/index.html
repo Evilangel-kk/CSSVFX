@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>雷电效果-Web前端之家</title>
+		<style type="text/css">
+			body {
+				background: #000;
+			}
+
+			.lightning {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				width: 100%;
+			}
+
+			.lightning div {
+				position: absolute;
+				overflow: hidden;
+			}
+
+			@keyframes flash_light {
+				0% {
+					height: 0px;
+					opacity: 0.5;
+				}
+
+				7.5% {
+					height: 320px;
+				}
+
+				8%,
+				12%,
+				16% {
+					opacity: 0.5;
+				}
+
+				10%,
+				14% {
+					opacity: 1;
+				}
+
+				50% {
+					opacity: 0;
+				}
+
+				100% {
+					height: 320px;
+					opacity: 0;
+				}
+			}
+
+			.lightning div img {
+				display: block;
+				margin: auto;
+				width: 100%;
+			}
+
+			.lightning .lightning1 {
+				position: absolute;
+				right: 70%;
+				animation: flash_light 5.7s infinite;
+			}
+
+			.lightning .lightning2 {
+				position: absolute;
+				left: 70%;
+				animation: flash_light 5.1s infinite;
+				animation-delay: -2.33s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<div class="lightning">
+				<div class="lightning1"><img src="https://www.jiangweishan.com/demo/lightning1.png"></div>
+				<div class="lightning2"><img src="https://www.jiangweishan.com/demo/lightning2.png"></div>
+			</div>
+		</div>
+
+	</body>
+</html>

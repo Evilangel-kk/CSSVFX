@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/Hulk style.css">
+		<link rel="stylesheet" href="css/box style.css">
+		<title>CSS绿巨人标志</title>
+	</head>
+	<body>
+		<div class="logo"></div>
+		<div class="move"></div>
+		
+		<script src="https://kit.fontawesome.com/9005b554ce.js" crossorigin="anonymous"></script>
+		<div class="Page">
+			<div id="left" class="arrowhead left">
+				<i class="fa-solid fa-angle-left"></i>
+			</div>
+			<div id="right" class="arrowhead right">
+				<i class="fa-solid fa-angle-right"></i>
+			</div>
+		</div>
+		<script>
+			var Left=document.getElementById("left");
+			var Right=document.getElementById("right");
+			Left.onclick=function(){
+				location.replace("Iron Man2.html");
+			}
+			Right.onclick=function(){
+				location.replace("Doctor Strange.html");
+			}
+		</script>
+	</body>
+</html>

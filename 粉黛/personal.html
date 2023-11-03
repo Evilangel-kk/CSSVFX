@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="欢迎来到粉黛在线">
+		<meta name="keywords" content="手把手教化妆">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="img/jkl.png" />
+		<link rel="stylesheet" href="css/fontawesome.css" />
+		<title>粉黛在线 | 个 人 中 心</title>
+	</head>
+	<body>
+		<script src="https://kit.fontawesome.com/9005b554ce.js" crossorigin="anonymous"></script>
+		
+		<div class="pbg">
+			<div class="container">
+				<div class="header">
+					<div class="logo">
+						<img src="img/jkl.png" alt="logo">
+						<h1><a href="home.html">粉黛</a></h1>
+					</div>
+			
+				</div>
+				<div class="wrapper">
+					<div class="button">
+						<div class="icon">
+							<i class="fa-solid fa-house-chimney fa-2x"></i>
+						</div>
+						<span><a href="find.html">Find</a></span>
+					</div>
+					<div class="button">
+						<div class="icon">
+							<i class="fa-solid fa-camera-retro fa-2x"></i>
+						</div>
+						<span><a href="graze.html">Graze</a></span>
+					</div>
+					<div class="button">
+						<div class="icon">
+							<i class="fa-solid fa-user"></i>
+						</div>
+						<span><a href="login.html">Mine</a></span>
+					</div>
+					<div class="button">
+						<div class="icon">
+							<i class="fa-solid fa-caret-down fa-2x"></i>
+						</div>
+						<span><a href="more.html">More</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="back1">
+				<span>欢 迎 回 来</span>
+			</div>
+		</div>
+		<div class="back2">
+			<div class="paper">
+				<div class="avatar"></div>
+				<div class="massage">
+					<span>编辑资料</span>
+				</div>
+				<div class="directory">
+					<div class="index">
+						<i class="fa-solid fa-eye"></i>
+						<span>关注</span><br>
+						<p>0</p>
+					</div>
+					<div class="index">
+						<i class="fa-solid fa-heart"></i>
+						<span>粉丝</span><br>
+						<p>0</p>
+					</div>
+					<div class="index">
+						<i class="fa-solid fa-thumbs-up"></i>
+						<span>获赞</span><br>
+						<p>0</p>
+					</div>
+				</div>
+				<div class="write">
+					<input type="text" placeholder="写点什么吧">
+					<span><i class="fa-solid fa-file-image"></i></span>
+				</div>
+				<div class="bg-paper">
+					<div class="history">
+						<span>你还没有发布过内容</span>
+					</div>
+				</div>
+			</div>
+			<div class="clr"></div>
+			<footer id="main-footer">
+				<p>粉黛 &copy;2022,All Rights Reserved.</p>
+			</footer>
+		</div>
+		
+		<script>
+			//获取背景对象
+			const bg = document.querySelector(".back1");
+			//监听滚轮事件
+			document.addEventListener("scroll",
+				function() {
+					const scrollY = window.scrollY;
+					if (scrollY != 0) {
+						bg.style.backgroundPosition = "calc(50% + " + scrollY + "px) calc(50% + " + scrollY + "px)";
+					} else {
+						bg.style.backgroundPosition = "";
+					}
+				})
+		</script>
+	</body>
+</html>

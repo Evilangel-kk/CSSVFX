@@ -1,0 +1,235 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 101vh;
+	background-color: #001421;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.reactor{
+	position: absolute;
+	width: 62vmin;
+	height: 62vmin;
+	border-radius: 50%;
+	border: 2.0vmin solid #000000;
+	box-shadow: 0 0 20vmin #01cafe;
+	background: radial-gradient(circle,#fff 30%,#46fffe);
+	overflow: hidden;
+	animation: rotate 5s linear infinite;
+}
+.triangle{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 34.6vmin solid transparent;
+	border-right: 34.6vmin solid transparent;
+	border-top: 60vmin solid rgb(17,17,17);
+	top: 9.5vmin;
+	left: -5.8vmin;
+	z-index: 1;
+}
+.triangle::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 29.6vmin solid transparent;
+	border-right: 29.6vmin solid transparent;
+	border-top: 52vmin solid #95f3ff;
+	top: -57vmin;
+	left: -29.5vmin;
+}
+.stick{
+	position: absolute;
+	top: -53vmin;
+	width: 15vmin;
+	height: 2vmin;
+	background-color: #213b5c;
+	z-index: 1;
+	box-shadow: 0 0 6vmin 1vmin #fff;
+}
+.stick::after{
+	content: "";
+	position: absolute;
+	width: 5vmin;
+	height: 4vmin;
+	top: -1vmin;
+	left: 1.4vmin;
+	background-color: #213b5c;
+	border-radius: 0.5vmin;
+} 
+.stick1{
+	left: -27vmin;
+	top: -52vmin;
+	transform: rotate(30deg);
+}
+.stick2{
+	left: 12vmin;
+	top: -52vmin;
+	transform: rotate(148deg);
+}
+.stick3{
+	left: -7vmin;
+	top: -20vmin;
+	transform: rotate(-90deg);
+} 
+.triangleCore{
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-left: 17.2vmin solid transparent;
+	border-right: 17.0vmin solid transparent;
+	border-top: 28vmin solid #213b5c;
+	top: -49.5vmin;
+	left: -16.75vmin;
+}
+.core{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10.2vmin solid transparent;
+	border-right: 10vmin solid transparent;
+	border-top: 16.9vmin solid #e8fefd;
+	top: -23.9vmin;
+	left: -10vmin;
+}
+.core::before{
+	content: "";
+	position: absolute;
+	width: 11.5vmin;
+	height: 1.5vmin;
+	background-color: #213b5c;
+	top: -16.9vmin;
+	left: -6vmin;
+}
+.core::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 5.7vmin solid transparent;
+	border-right: 5.5vmin solid transparent;
+	border-top: 9vmin solid #f0faf9;
+	filter: drop-shadow(0 0 3vmin #fff);
+	top: -14vmin;
+	left: -5.5vmin;
+}
+.stick4{
+	position: absolute;
+	width: 11vmin;
+	height: 1.5vmin;
+	background-color: #213b5c;
+	transform: rotate(59deg);
+	top: -9.4vmin;
+	left: -9.9vmin;
+}
+.stick4::after{
+	content: "";
+	position: absolute;
+	width: 11vmin;
+	height: 1.5vmin;
+	background-color: #213b5c;
+	transform: rotate(-118deg);
+	top: -7.5vmin;
+	left: 4.6vmin;
+}
+.bezelsAll{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.bezels{
+	position: absolute;
+	width: 7.3vmin;
+	height: 14vmin;
+	background-color: #213b5c;
+}
+.bezels1{
+	left: 15.65vmin;
+	top: 1vmin;
+	transform: rotate(-20deg);
+}
+.bezels2{
+	left: 0vmin;
+	top: 26.5vmin;
+	transform: rotate(80deg);
+}
+.bezels3{
+	left: 10vmin;
+	top: 43vmin;
+	transform: rotate(40deg);
+}
+.bezels4{
+	left: 38.8vmin;
+	top: 41vmin;
+	transform: rotate(-40deg);
+}
+.bezels5{
+	left: 51vmin;
+	top: 26vmin;
+	transform: rotate(-80deg);
+}
+.bezels6{
+	left: 35.8vmin;
+	top: -0.4vmin;
+	transform: rotate(20deg);
+}
+.bezels1::before,
+.bezels2::before,
+.bezels4::before{
+	content: "";
+	position: absolute;
+	width: 9vmin;
+	height: 9vmin;
+	background: radial-gradient(circle, #fff 45%, #46fffe);
+	box-shadow: 0 0 3vmin #46fffe;
+	border-radius: 50%;
+}
+.bezels1::before{
+	left: 9.5vmin;
+	top: 3vmin;
+}
+.bezels2::before{
+	left: 8vmin;
+	top: -1vmin;
+}
+.bezels4::before{
+	left: 9vmin;
+	top: 1vmin;
+}
+.light1,
+.light2,
+.light3{
+	position: absolute;
+	width: 25vmin;
+	height: 4vmin;
+	background-color: #46fffe;
+	z-index: 2;
+	box-shadow: 0 0 3vmin 1.0vmin #1bffff;
+}
+.light1{
+	top: -55vmin;
+	left: -12vmin;
+}
+.light2{
+	top: -36vmin;
+	left: -24vmin;
+	transform: rotate(60deg);
+}
+.light3{
+	top: -36vmin;
+	transform: rotate(-60deg);
+}
+@keyframes rotate {
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

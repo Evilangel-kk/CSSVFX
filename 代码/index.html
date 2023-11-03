@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<pre>
+			#include<iostream>
+			#include<string>
+			using namespace std;
+			class Student
+			{
+			private:
+				string name;
+				string number;
+			public:
+				void input_data()
+				{
+					cout << "Please enter the student's name: ";
+					cin>>name;
+					
+					cout << "Please enter the student's number: ";
+					cin>>number;
+				}
+				int search_name(string find_name)
+				{
+					if (name == find_name)
+					{
+						cout << "\nThe student " << find_name << " has been found.\n";
+						cout << "The student's number is " << number << ".\n";
+						return 1;
+					}
+					return 0;
+				}
+				int search_number(string find_number)
+				{
+					if (number == find_number)
+					{
+						cout << "\nThe student " << find_number << " has been found.\n";
+						cout << "The student's name is " << name << ".\n";
+						return 1;
+					}
+					return 0;
+				}
+			};
+			int main()
+			{
+				int i, n;
+				cout << "Please enter the number of students you need to input: ";
+				cin >> n;
+				i = n;
+				Student stud[n];
+			
+				while (i)
+				{
+					stud[i - 1].input_data();
+					i--;
+				}
+				string find_name, find_number;
+				cout << "Do you want to look up by name or student number? name:1 number:2\t";
+				string way;
+				cin >> way;
+				i = n;
+				int flag = 0;
+				if (way == "name" || way == "1")
+				{
+					cout << "Please enter the student's name you want to find: ";
+					cin>>find_name;
+			
+					while (i)
+					{
+						flag += stud[i - 1].search_name(find_name);
+						i--;
+					}
+				}
+				else if (way == "number" || way == "2")
+				{
+					cout << "Please enter the student's number you want to find: ";
+					cin>>find_number;
+					
+					while (i)
+					{
+						flag += stud[i - 1].search_number(find_number);
+						i--;
+					}
+				}
+				if (!flag)
+				{
+					cout << "The student hasn't been found.\n";
+				}
+				return 0;
+			}
+		</pre>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css">
+		<title>滚轮视差效果</title>
+	</head>
+	<body>
+		<h2>↓滚轮滚一下呗↓</h2>
+		<div class="bg">
+			<span>Hello</span>
+		</div>
+		<h1>Welcome to<br>Evilangel's HEAVEN</h1>
+		<script>
+			//获取背景对象
+			const bg = document.querySelector(".bg");
+			//监听滚轮事件
+			document.addEventListener("scroll",
+				function() {
+					const scrollY = window.scrollY;
+					if (scrollY != 0) {
+						bg.style.backgroundPosition = "calc(50% + " + scrollY + "px) calc(50% + " + scrollY + "px)";
+					} else {
+						bg.style.backgroundPosition = "";
+					}
+				})
+		</script>
+	</body>
+</html>
